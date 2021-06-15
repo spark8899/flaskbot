@@ -6,7 +6,7 @@ from logging import Formatter
 
 app = Flask(__name__)
 telbot_id = 'bot111111:aaaaaaaa-bbbbbbb'
-chia_id = '-000000'
+chat_id = '-000000'
 log_path = '/opt/flask_bot/bots/bot.log'
 
 @app.route('/')
@@ -15,7 +15,7 @@ def home():
     return "<p>Hello, World!</p>"
 
 @app.route('/flaskbot', methods=["POST"])
-def chia():
+def flaskbot():
     data = request.get_json()
     app.logger.warning("client: %s, data: %s" % (request.remote_addr, data))
     url = "https://api.telegram.org/%s/sendMessage" % telbot_id

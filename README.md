@@ -41,5 +41,5 @@ systemctl start flaskbot
 ```
 # test api
 ```bash
-curl -X POST -H 'Content-Type: application/json' http://127.0.0.1:28081/flaskbot -d '{"text": "testtttt"}'
+curl -X POST -H 'Content-Type: application/json' http://127.0.0.1:8080/flaskbot -d '{"text": "testtttt"}'
 ```

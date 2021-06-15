@@ -11,6 +11,8 @@ git clone https://github.com/spark8899/flaskbot.git && cd flaskbot
 pip install -r requirements.txt
 ```
 
+# modify main.py
+change telbot_id and chia_id
 
 # add service
 vim /etc/systemd/system/flaskbot.service
